@@ -1,0 +1,14 @@
+header {
+    padding: 16px 32px;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to left, #101d7c, #03f7ea);
+    border-image-slice: 1;
+    background: var(--color-isp);
+}
+
+header div h1 {
+    font-size: 20px;
+    color: #fff;  
+    margin: 0;
+    padding: 0;    
+}

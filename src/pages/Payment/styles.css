@@ -1,0 +1,41 @@
+.payment-container {
+    width: 100%;
+    max-width: 600px;
+    height: 50vh;
+    margin: 0 auto;
+
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-container .content {
+    width: 100%;
+    padding: 100px;
+    background: #f0f0f5;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    margin-top: 15%;
+}
+
+.payment-container .content h1 {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.payment-container .content form input {
+    margin-top: 10px;
+}
+
+/* REMOVE ARROWS FROM INPUT TYPE NUMBER */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

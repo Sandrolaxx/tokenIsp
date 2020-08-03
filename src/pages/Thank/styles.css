@@ -1,0 +1,176 @@
+:root {
+    --color-isp: #006eba;
+    --color-isp_dark: #024d83;
+}
+
+.thank-container {
+    width: 100%;
+    max-width: 600px;
+    height: 50vh;
+    margin: 0 auto;
+
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.thank-container .content {
+    width: 100%;
+    padding: 80px;
+    background: #f0f0f5;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    margin-top: 15%;
+}
+
+.thank-container .content h1 {
+    padding-bottom: 30px;
+    text-align: center;
+    color: var(--color-isp);
+}
+
+.thank-container .content img {
+    max-width: 400px;
+    margin: -15px;
+    padding-top: 40px;
+    padding-left: 60px;
+}
+
+/*=====SOCIAL ICONS=====*/
+.social-icons ul {
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    /* transform: rotate(-25deg) skew(25deg); */
+}
+
+.social-icons ul li {
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+}
+
+.social-icons ul li:before {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    left: -10px;
+    width: 100%;
+    height: 10px;
+    background: var(--color-isp_dark);
+    transform-origin: bottom;
+    transform: skewX(-50deg);
+}
+
+.social-icons ul li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 10px;
+    height: 100%;
+    background: var(--color-isp);
+    transform-origin: right;
+    transform: skewY(-41deg);
+}
+
+.social-icons ul li span { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: var(--color-isp);
+    font-size: 30px !important;
+    transition: 0.2s;
+}
+
+.social-icons ul li:hover span { 
+    z-index: 1000;
+    transition: 0.5s;
+    color: #fff;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.social-icons ul li:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+
+.social-icons ul li:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
+    opacity: 0.8;
+}
+
+.social-icons ul li:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
+    opacity: 0.6;
+}
+
+.social-icons ul li:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
+    opacity: 0.4;
+}
+
+.social-icons ul li:hover span:nth-child(1) {
+    transform: translate(0px, -0px);
+    opacity: 0.2;
+}
+
+.social-icons ul li:nth-child(1) span {
+    background: url(../assets/fb.svg) no-repeat;
+    background-size: contain;
+    background-color: var(--color-isp);
+}
+
+.social-icons ul li:nth-child(2) span {
+    background: url(../assets/inst.svg) no-repeat;
+    background-size: contain;
+    background-color: var(--color-isp);
+}
+
+.social-icons ul li:nth-child(3) span {
+    background: url(../assets/twitter.svg) no-repeat;
+    background-size: contain;
+    background-color: var(--color-isp);
+}
+
+.social-icons ul li:nth-child(4) span {
+    background: url(../assets/wpp.svg) no-repeat;
+    background-size: contain;
+    background-color: var(--color-isp);
+}
+
+.social-icons ul li:nth-child(1):hover span {
+    background: url(../assets/fb.svg) no-repeat;
+    background-size: contain;
+    background-color: var(--color-isp);
+}
+
+.social-icons ul li:nth-child(2):hover span {
+    background: url(../assets/inst.svg) no-repeat;
+    background-size: contain;
+    background-color: var(--color-isp);
+}
+
+.social-icons ul li:nth-child(3):hover span {
+    background: url(../assets/twitter.svg) no-repeat;
+    background-size: contain;
+    background-color: var(--color-isp);
+}
+
+.social-icons ul li:nth-child(4):hover span {
+    background: url(../assets/wpp.svg) no-repeat;
+    background-size: contain;
+    background-color: var(--color-isp);
+}
+

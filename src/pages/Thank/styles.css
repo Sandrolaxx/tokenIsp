@@ -1,10 +1,5 @@
-:root {
-    --color-isp: #006eba;
-    --color-isp_dark: #024d83;
-}
-
 .thank-container {
-    width: 100%;
+    width: 90vw;
     max-width: 600px;
     height: 50vh;
     margin: 0 auto;
@@ -16,7 +11,7 @@
 
 .thank-container .content {
     width: 100%;
-    padding: 80px;
+    padding: 15%;
     background: #f0f0f5;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
@@ -24,16 +19,15 @@
 }
 
 .thank-container .content h1 {
-    padding-bottom: 30px;
+    padding-bottom: 2rem;
     text-align: center;
     color: var(--color-isp);
 }
 
 .thank-container .content img {
-    max-width: 400px;
-    margin: -15px;
-    padding-top: 40px;
-    padding-left: 60px;
+    width: 35vh;
+    padding-top: 1rem;
+    padding-left: 10vw;
 }
 
 /*=====SOCIAL ICONS=====*/
@@ -174,3 +168,9 @@
     background-color: var(--color-isp);
 }
 
+@media(min-width:900px) {
+    .thank-container .content img {
+        width: 40vh;
+        padding-left: 3rem;
+    }
+}

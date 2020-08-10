@@ -22,7 +22,7 @@ export default function Purchase() {
                         </li>
                         <li>
                             <strong>Descrição</strong>
-                            <p>A Bola Feijão Carci Bean é desenvolvida em produto vinílico e atóxico, 
+                            <p className="description">A Bola Feijão Carci Bean é desenvolvida em produto vinílico e atóxico, 
                                 sendo capaz de suportar até 200 Kg, com 106X70cm de diâmetro, 
                                 proporcionando maior resistência e durabilidade ao produto.
                             </p>

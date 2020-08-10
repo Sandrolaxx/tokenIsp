@@ -12,7 +12,6 @@ export default function Login() {
             <div className="login-container">
                 <section className="form">
                     <img src={logoImg} alt="logo-empresa" />
-
                     <form>
                         <h1>Insira seu CPF para buscarmos seu pedido: </h1>
 
@@ -21,7 +20,7 @@ export default function Login() {
                     </form>
                 </section>
 
-                <img src={loginImg} alt="login" />
+                <img className="blue-guy" src={loginImg} alt="login" />
             </div>
         </div>
     );

@@ -1,8 +1,6 @@
 .purchase-container {
-    width: 100%;
-    max-width: 1180px;
-    padding: 0 10px;
-    margin: 10px auto;
+    padding: 0 1rem;
+    margin: 1rem 1rem;
 }
 
 .purchase-container .content ul {
@@ -10,26 +8,27 @@
 }
 
 .purchase-container .content h2 {
-    margin: 5px;
+    margin: 2px 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .purchase-container .content ul li strong{
-    margin: 5px;
+    margin: 2px 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.purchase-container .content ul li p{
-    margin: 5px;
+.purchase-container .content  ul li p{
+    margin: 2px 5px;
 }
 
 .purchase-container .content .products {
     width: 100%;
-    padding: 10px;
+    max-height: 30vh;
+    padding: 1vh;
     background: #f0f0f5;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
@@ -39,16 +38,15 @@
 .purchase-container .content .products ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    display: flex;
     justify-content: space-between;
 }
 
 .purchase-container .content .products ul li + li {
-    margin-left: 45%;
+    margin-left: 15%;
+    font-size: 90%;
 }
 
 .purchase-container .content .payment {
-    width: 100%;
     padding: 5px;
     background: #f0f0f5;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
@@ -57,7 +55,6 @@
 }
 
 .purchase-container .content .delivery {
-    width: 100%;
     padding: 5px;
     background: #f0f0f5;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
@@ -66,8 +63,9 @@
 }
 
 .purchase-container .content img {
-    max-width: 250px;
-    border-radius: 10px;
+    max-width: 23vw;
+    min-width: 17vh;
+    border-radius: 1rem;
     border: 2px solid #006eba;
 }
 
@@ -79,4 +77,22 @@
 .cancel a {
     color: #006eba;
     text-decoration: none;
+}
+
+@media (min-width: 900px) {
+    .purchase-container {
+        max-width: 1100px;
+        padding: 0 10px;
+        margin: 1rem auto;
+    }
+    
+    .purchase-container .content .products ul li + li {
+        margin-left: 35%;
+        font-size: 100%;
+    }
+    
+    .purchase-container .content img {
+        max-width: 13rem;
+    }
+    
 }

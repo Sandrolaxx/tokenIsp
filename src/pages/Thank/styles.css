@@ -1,39 +1,40 @@
 .thank-container {
-    width: 90vw;
-    max-width: 600px;
-    height: 50vh;
     margin: 0 auto;
 
-    display: block;
+    display: flex;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
 }
 
 .thank-container .content {
     width: 100%;
-    padding: 15%;
+    padding: 5rem;
     background: #f0f0f5;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
-    margin-top: 15%;
+    margin-top: 20rem;
+    max-width: 80vw;
+    text-align: center;
 }
 
 .thank-container .content h1 {
-    padding-bottom: 2rem;
-    text-align: center;
+    margin-bottom: 2rem;
     color: var(--color-isp);
 }
 
 .thank-container .content img {
-    width: 35vh;
-    padding-top: 1rem;
-    padding-left: 10vw;
+    max-width: 50vw;
 }
+
+.thank-container .content .desktop-illustration {
+    display: none;
+}
+
 
 /*=====SOCIAL ICONS=====*/
 .social-icons ul {
-    margin-top: 15px;
-    position: relative;
+    margin: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +55,7 @@
     position: absolute;
     bottom: -9px;
     left: -10px;
-    width: 100%;
+    width: 97%;
     height: 10px;
     background: var(--color-isp_dark);
     transform-origin: bottom;
@@ -169,8 +170,58 @@
 }
 
 @media(min-width:900px) {
-    .thank-container .content img {
-        width: 40vh;
-        padding-left: 3rem;
+    html{
+        font-size: 55%;
     }
+
+    .thank-container .content {
+        margin-top: 15rem;
+        text-align: center;
+    }
+
+    .thank-container .content img {
+        width: 50rem;
+    }
+
+    .thank-container .content .desktop-illustration {
+        display: unset;
+    }
+
+    .thank-container .content .mobile-illustration {
+        display: none;
+    }
+}
+
+@media(max-width:500px) {
+    .social-icons ul li {
+        position: relative;
+        list-style: none;
+        width: 45px;
+        height: 45px;
+        margin: 0 7px;
+    }
+    
+    .social-icons ul li:before {
+        content: '';
+        position: absolute;
+        bottom: -9px;
+        left: -10px;
+        height: 10px;
+        width: 97%;
+        background: var(--color-isp_dark);
+        transform-origin: bottom;
+        transform: skewX(-50deg);
+    }
+}
+
+@media(max-width:400px) {
+    .social-icons ul li {
+        position: relative;
+        list-style: none;
+        width: 35px;
+        height: 35px;
+        margin: 0 7px;
+        min-width: 10vw;
+    }
+    
 }

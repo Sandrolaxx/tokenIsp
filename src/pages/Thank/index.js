@@ -1,7 +1,8 @@
 import React from 'react';
 
 import './styles.css';
-import saleImg from '../assets/sale_image.png';
+import saleImgDesktop from '../assets/sale_image.png';
+import saleImgMobile from '../assets/sale_image_mobile.svg';
 
 export default function Thank() {
     return (
@@ -55,7 +56,8 @@ export default function Thank() {
                         </li>
                     </ul>
                 </div>
-                <img src={saleImg} alt=""/>
+                <img className="desktop-illustration" src={saleImgDesktop} alt="Sale Image"/>
+                <img className="mobile-illustration" src={saleImgMobile} alt="Sale Image"/>
             </div>
         </div>
     );

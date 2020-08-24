@@ -15,7 +15,7 @@ export default function PaymentSummary() {
                     </h2>
                     <ul>
                         <li>
-                            <strong>Produtos(1)</strong>
+                            <strong>Produtos(2)</strong>
 
                             <strong >Frete</strong>
 
@@ -24,11 +24,11 @@ export default function PaymentSummary() {
                             <strong >Cartão do Pagamento</strong>
                         </li>
                         <li>
-                            <p>R$ 135,60</p>
+                            <p>R$ 271,20</p>
 
                             <p>Grátis</p>
 
-                            <p> 1x R$ 135,60</p>
+                            <p> 2x R$ 271,20</p>
 
                             <p> 5149 45XX XXXX 2392</p>
                         </li>

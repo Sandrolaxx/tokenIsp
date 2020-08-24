@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { FiShoppingBag, FiTruck, FiCreditCard } from 'react-icons/fi';
 
 import './styles.css';
-import product from '../assets/bola-bean.jpg';
+import productOne from '../assets/bola_cravo.jpg';
+import productTwo from '../assets/meia_bola.jpg';
 
 export default function Purchase() {
     return (
@@ -15,25 +16,38 @@ export default function Purchase() {
                         Pedido
                         <FiShoppingBag size={25} color="#006eba" />
                     </h2>
-                    <ul>
-                        <li>
+                    <section className="images-and-details">
+                        <div className="images">
                             <strong>Produtos</strong>
-                            <img src={product} alt="bola-bean" />
-                        </li>
-                        <li>
-                            <strong>Descrição</strong>
-                            <p className="description">A Bola Feijão Carci Bean é desenvolvida em produto vinílico e atóxico, 
-                                sendo capaz de suportar até 200 Kg, com 106X70cm de diâmetro, 
-                                proporcionando maior resistência e durabilidade ao produto.
-                            </p>
+                            <img src={productOne} alt="bola-bean" />
+                            <img src={productTwo} alt="bola-bean" />
+                        </div>
+                        <div className="description">
+                            <ul>
+                                <li>
+                                    <strong>Descrição</strong>
+                                    <p>Bola Cravo Antiestresse - Arktus
+                                    </p>
 
-                            <strong >Frete</strong>
-                            <p>Grátis</p>
+                                    <strong >Frete</strong>
+                                    <p>Grátis</p>
 
-                            <strong >Valor</strong>
-                            <p>R$ 135,60</p>
-                        </li>
-                    </ul>
+                                    <strong >Valor</strong>
+                                    <p>R$ 135,60</p>
+                                </li>
+                                <li>
+                                    <strong>Descrição</strong>
+                                    <p>Meia Bola Bosu com Elásticos, Alças e Bomba - Arktus.</p>
+
+                                    <strong >Frete</strong>
+                                    <p>Grátis</p>
+
+                                    <strong >Valor</strong>
+                                    <p>R$ 135,60</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
                 </div>
                 <div className="payment">
                     <h2>
@@ -46,7 +60,7 @@ export default function Purchase() {
                             <p>MASTERCARD</p>
 
                             <strong>Total</strong>
-                            <p>1X R$ 135,60</p>
+                            <p>1X de R$ 271,20</p>
                         </li>
                     </ul>
                 </div>
@@ -59,12 +73,12 @@ export default function Purchase() {
                         <li>
                             <strong>Bairro</strong>
                             <p>MARIA LUIZA, CASCAVEL, PR</p>
-                            
+
                             <strong>Rua</strong>
                             <p>JAIME DUARTE LEAL - 257</p>
 
                             <strong>CEP</strong>
-                            <p>85819-660</p>                            
+                            <p>85819-660</p>
                         </li>
                     </ul>
                 </div>

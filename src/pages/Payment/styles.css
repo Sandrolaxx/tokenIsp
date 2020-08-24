@@ -1,29 +1,45 @@
 .payment-container {
-    width: 90vw;
-    max-width: 600px;
-    height: 50vh;
     margin: 0 auto;
 
-    display: block;
+    display: flex;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
 }
 
-.payment-container .content {
-    padding: 15%;
+.payment-container .form {
     background: #f0f0f5;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
-    margin-top: 15%;
+    margin: 4rem 5rem;
+    padding: 1.5rem 2rem;
+    width: 55vw;
 }
 
-.payment-container .content h1 {
-    padding-bottom: 30px;
-    text-align: center;
+.payment-container h1 {
+  text-align: center;
 }
 
-.payment-container .content form input {
-    margin-top: 10px;
+.payment-container .form form {
+  margin: 0 auto;
+}
+
+.payment-container .pay-image {
+  max-width: 60vw;
+  text-align: center;
+}
+
+.payment-container .pay-image img {
+  margin-top: -4rem;
+  max-width: 40rem;
+}
+
+.payment-container .form form input {
+  margin: 0.4rem auto;
+}
+
+.payment-container .desktop-illustration {
+  display: none;
 }
 
 /* REMOVE ARROWS FROM INPUT TYPE NUMBER */
@@ -37,4 +53,53 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+@media (min-width: 900px) {
+
+  html{
+      font-size: 50.5%;
+  }
+
+  .payment-container {  
+    margin-top: 22rem;    
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .payment-container .pay-image  {  
+    text-align: center;
+    margin-top: 7rem;
+  }
+
+  .payment-container .pay-image img {  
+    margin-left: 7rem;
+  }
+
+  .payment-container .form  {  
+    max-width: 60rem;
+  }
+  
+  .payment-container .desktop-illustration {
+      display: flex;
+      max-width: 50rem;
+  }
+
+  .payment-container .mobile-illustration {
+      display: none;
+  }
+
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+  .payment-container .form {
+    background: #f0f0f5;
+    margin: 4rem 1rem;
+    width: 70vw;
+  }
 }

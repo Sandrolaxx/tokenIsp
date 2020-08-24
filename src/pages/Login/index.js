@@ -1,27 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import './styles.css';
 
 import logoImg from '../assets/logo_img_1.png';
-import loginImg from '../assets/login_img-2.png';
+import loginImg from '../assets/payment_img_login.svg';
+import loginImgMobile from '../assets/payment_img_login_mobile.svg';
 
-export default function Login() {
-    return (
-        <div>
-            <div className="login-container">
-                <section className="form">
-                    <img src={logoImg} alt="logo-empresa" />
-                    <form>
-                        <h1>Insira seu CPF para buscarmos seu pedido: </h1>
+class Login extends Component {
 
-                        <input type="number" placeholder="Insira seu CPF" />
-                        <Link className="button" to="/purchase">Continuar</Link>
-                    </form>
-                </section>
+    render() {
+        return (
+                <div className="login-container">
 
-                <img className="blue-guy" src={loginImg} alt="login" />
-            </div>
-        </div>
-    );
-} 
+                    <img className="logo" src={logoImg} alt="logo-empresa" />
+
+                    <section className="form">
+                        <form>
+                            <h1>Insira seu CPF para buscarmos seu pedido: </h1>
+
+                            <input type="number" placeholder="Insira seu CPF" />
+                            <Link className="button" to="/purchase">Continuar</Link>
+                        </form>
+                    </section>
+
+                    <img className="desktop-illustration" src={loginImg} alt="login" />
+                    <img className="mobile-illustration" src={loginImgMobile} alt="login" />
+                </div>
+        );
+    }
+}
+
+export default Login;
